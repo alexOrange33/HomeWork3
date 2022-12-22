@@ -8,11 +8,11 @@ System.Console.Write("Введите пятизначное число: ");
 string num = Console.ReadLine()!;
 if(num.Length == 5)
 {
-for(int i=0;i<=2;i++)
+for(int i=0;i <= num.Length / 2;i++)
 {
-    if(num[i] == num[4-i])
+    if(num[i] == num[num.Length-1-i])
     {
-        if(i == 2) System.Console.Write($"{num} -> да");
+        if(i == num.Length / 2) System.Console.Write($"{num} -> да");
     }
     else 
     {
